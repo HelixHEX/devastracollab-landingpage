@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e2b237e9.chunk.css",
+    "main.js": "./static/js/main.0aac0966.chunk.js",
+    "main.js.map": "./static/js/main.0aac0966.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.01b4ca54.js",
+    "runtime-main.js.map": "./static/js/runtime-main.01b4ca54.js.map",
+    "static/css/2.ad72acfc.chunk.css": "./static/css/2.ad72acfc.chunk.css",
+    "static/js/2.b7729688.chunk.js": "./static/js/2.b7729688.chunk.js",
+    "static/js/2.b7729688.chunk.js.map": "./static/js/2.b7729688.chunk.js.map",
+    "static/js/3.66eed2ea.chunk.js": "./static/js/3.66eed2ea.chunk.js",
+    "static/js/3.66eed2ea.chunk.js.map": "./static/js/3.66eed2ea.chunk.js.map",
+    "static/js/4.ba0ed358.chunk.js": "./static/js/4.ba0ed358.chunk.js",
+    "static/js/4.ba0ed358.chunk.js.map": "./static/js/4.ba0ed358.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.ad72acfc.chunk.css.map": "./static/css/2.ad72acfc.chunk.css.map",
+    "static/css/main.e2b237e9.chunk.css.map": "./static/css/main.e2b237e9.chunk.css.map",
+    "static/js/2.b7729688.chunk.js.LICENSE.txt": "./static/js/2.b7729688.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/NotoColorEmoji-flags.148141ac.woff2",
+    "static/media/demo.d21cc0cd.png": "./static/media/demo.d21cc0cd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01b4ca54.js",
+    "static/css/2.ad72acfc.chunk.css",
+    "static/js/2.b7729688.chunk.js",
+    "static/css/main.e2b237e9.chunk.css",
+    "static/js/main.0aac0966.chunk.js"
+  ]
+}
