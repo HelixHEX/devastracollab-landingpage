@@ -143,7 +143,7 @@ const Welcome = (props) => {
         <Heading mt={10} color='white' >Pricing</Heading>
         <Flex flexDir={['column', 'column', 'column', 'column', 'row']} >
           <Flex flexDir='column' bg='white' rounded={10} color='brandgray.900' mt={5} w={[350, 400]} minH={300} h='auto'>
-            <Text mt={2} textAlign='center' fontSize={30} fontWeight='700'>Individual</Text>
+            <Text mt={2} textAlign='center' fontSize={35} fontWeight='200'>Individual</Text>
             <Text textAlign='center' fontSize={35}>$0</Text>
             <Text textAlign='center'>Free Forever</Text>
             <Button mt={2} alignSelf='center' w={200} onClick={() => handleSignup()} _hover={{ bg: 'brandgray.900', color: 'white' }} borderWidth={2} borderColor='brandgray.900' bg='none' color='brandgray.900'>Get Started For Free</Button>
@@ -191,12 +191,11 @@ const Welcome = (props) => {
           {/* <Box ml={5} mt={10} bg='brandgray.900' w={400} h={300}>
 
           </Box> */}
-          <Flex ml={5} flexDir='column' bg='brandpurple.100' rounded={10} color='white' mt={5} w={[350, 400]} minH={300} h='auto'>
+          {/* <Flex ml={5} flexDir='column' bg='brandpurple.100' rounded={10} color='white' mt={5} w={[350, 400]} minH={300} h='auto'>
             <Text mt={2} textAlign='center' fontSize={30} fontWeight='700'>Premium</Text>
             <Text textAlign='center' fontSize={35}>$14.99</Text>
             <Text textAlign='center'>Billed monthly</Text>
             <Button mt={2} alignSelf='center' w={200} onClick={() => handleTeamSignup('premium')} _hover={{ bg: 'gray.200', color: 'brandgray.900' }} bg='brandgray.900' color='white'>Get Started</Button>
-            {/* <Text textAlign='center'>* No credit card required</Text> */}
             <Text fontSize={25} mt={10} textAlign='center'>Manage small to medium teams</Text>
             <List mb={5} ml={10} mt={5}>
               <ListItem>
@@ -270,7 +269,7 @@ const Welcome = (props) => {
                 </Flex>
               </ListItem>
             </List>
-          </Flex>
+          </Flex> */}
           {/* <Box ml={5} mt={10} bg='brandgray.900' w={400} h={300}>
 
           </Box> */}

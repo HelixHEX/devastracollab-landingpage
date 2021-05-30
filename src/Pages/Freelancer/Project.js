@@ -48,6 +48,7 @@ import DatePicker from 'react-date-picker';
 
 // import { useHistory } from 'react-router-dom'
 import { Settings } from 'react-feather'
+import ProjectDropdown from '../../Components/ProjectDropdown'
 
 axios.defaults.withCredentials = true
 
@@ -181,11 +182,12 @@ const Project = () => {
                 </Flex>
                 <Flex ml='5%' flexDir={['column', 'column', 'row']} mt='2%'>
                   <Center>
-                    <Select borderWidth={2} onChange={handleChange} borderColor='brandpurple.100' color='white' w={200} placeholder='Select Project'>
+                    {/* <Select borderWidth={2} onChange={handleChange} borderColor='brandpurple.100' color='white' w={200} placeholder='Select Project'>
                       <React.Suspense fallback={null}>
                         <ProjectOptions />
                       </React.Suspense>
-                    </Select>
+                    </Select> */}
+                    <ProjectDropdown handleChange={handleChange} />
                   </Center>
                   <Center mt={[3, 0]}>
                     <form onSubmit={handleAdd}>
@@ -211,15 +213,16 @@ const Project = () => {
                 <>
                   <Flex ml={[0, 0, 0, 20]} flexDir='column' >
                     <Flex ml='5%' mt='5%'>
-                      <Text fontSize='40' fontWeight='700' color='white'>{project.name}</Text>
+                      {/* <Text fontSize='40' fontWeight='700' color='white'>{project.name}</Text> */}
                     </Flex>
                     <Flex ml='5%' flexDir={['column', 'column', 'row']} mt='2%'>
                       <Center>
-                        <Select borderWidth={2} onChange={handleChange} borderColor='brandpurple.100' color='white' w={200} placeholder='Select Project'>
+                        {/* <Select borderWidth={2} onChange={handleChange} borderColor='brandpurple.100' color='white' w={200} placeholder='Select Project'>
                           <React.Suspense fallback={null}>
                             <ProjectOptions />
                           </React.Suspense>
-                        </Select>
+                        </Select> */}
+                        <ProjectDropdown handleChange={handleChange} />
                       </Center>
                     </Flex>
                     {currentProject === ''
@@ -457,26 +460,26 @@ const ProjectSettings = ({ project }) => {
   )
 }
 
-const ProjectOptions = () => {
-  const projects = useRecoilValue(fetchProjects);
-  const { id } = useParams()
-  const user = useUser()
-  useEffect(() => {
-    if (projects.length === 1 && id === 'default') {
-      window.location.href = `/${user.publicMetadata.type}/project/${projects[0].uuid}`
-    }
-  })
-  return (
-    <>
-      {projects.map((data, index) => {
-        if (data.uuid === id) {
-          return <option selected key={index} value={data.uuid}>{data.name}</option>
-        } else {
-          return <option key={index} value={data.uuid}>{data.name}</option>
-        }
-      })}
-    </>
-  )
-}
+// const ProjectOptions = () => {
+//   const projects = useRecoilValue(fetchProjects);
+//   const { id } = useParams()
+//   const user = useUser()
+//   useEffect(() => {
+//     if (projects.length === 1 && id === 'default') {
+//       window.location.href = `/${user.publicMetadata.type}/project/${projects[0].uuid}`
+//     }
+//   })
+//   return (
+//     <>
+//       {projects.map((data, index) => {
+//         if (data.uuid === id) {
+//           return <option selected key={index} value={data.uuid}>{data.name}</option>
+//         } else {
+//           return <option key={index} value={data.uuid}>{data.name}</option>
+//         }
+//       })}
+//     </>
+//   )
+// }
 
 export default Project
